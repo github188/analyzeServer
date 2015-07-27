@@ -20,19 +20,20 @@ CXXFLAGS := -Wall  -O2 -g
 CXXFLAGS += -I $(shell pwd)/include
 CXXFLAGS += $(shell pkg-config --cflags OpenCVPC) -lavformat -lavcodec -lavfilter -lavutil -lswresample -lswscale -lz -D__STDC_CONSTANT_MACROS
 
-LDLIBS    := $(shell pkg-config --libs  OpenCVPC)  -lpthread -lm -levent -ltinyxml 
+LDLIBS    := $(shell pkg-config --libs  OpenCVPC)  -lpthread -lm -levent -ltinyxml  -lZThread
 
 export CXXFLAGS LDLIBS  
 
 TOPDIR := $(shell pwd)
 export TOPDIR
 
-TARGET := analyzeServer
+TARGET := demo
 
 
 obj-y += main.o
 obj-y += xmlparser/
 obj-y += tcpclient/
+obj-y +=analyze/
 
 all : 
 	make  -C ./ -f $(TOPDIR)/Makefile.build

@@ -40,6 +40,15 @@
 #include <list>
 #include <map>
 
+#include <zthread/Runnable.h>  
+#include <zthread/Thread.h>  
+#include "zthread/PoolExecutor.h"  
+#include "zthread/ThreadedExecutor.h"  
+#include "zthread/ConcurrentExecutor.h"  
+#include "zthread/SynchronousExecutor.h"  
+#include "zthread/Runnable.h"  
+#include "zthread/PoolExecutor.h"    
+ 
 
 extern "C"
 {
@@ -55,6 +64,7 @@ extern "C"
 
 }
 
+using namespace ZThread;  
 using namespace std;
 using namespace cv;
 
@@ -77,6 +87,7 @@ typedef unsigned int       	uint32;
         #define dbgprint(format,args...)
 #endif
 
+#define DEBUGARGS __FILE__,__LINE__
 
 #endif
 
