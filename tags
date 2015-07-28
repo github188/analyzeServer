@@ -1,0 +1,278 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALARM_DAY	.\include\Analyze.h	/^}ALARM_DAY;$/;"	t	typeref:struct:_ALARM_DAY
+ALARM_DAY_INT	.\include\Analyze.h	/^}ALARM_DAY_INT;$/;"	t	typeref:struct:_ALARM_DAY_INT
+ALARM_TIME	.\include\CmdDefine.h	/^}ALARM_TIME;$/;"	t	typeref:struct:_ALARM_TIME
+ALARM_TIME_INT	.\include\Analyze.h	/^}ALARM_TIME_INT;$/;"	t	typeref:struct:_ALARM_TIME_INT
+ANAY_VDCS_CMD	.\include\CmdDefine.h	/^enum ANAY_VDCS_CMD {  				\/* city Server interaction CMD *\/$/;"	g
+AlarmTime	.\include\CmdDefine.h	/^		ST_SM_VDCS_VIDEO_ALARM_TIME  AlarmTime[WEEK_DAY_LEN_7];$/;"	m	struct:_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+AlarmTime	.\include\CmdDefine.h	/^	ST_SM_VDCS_VIDEO_ALARM_TIME  AlarmTime[WEEK_DAY_LEN_7];$/;"	m	struct:_SM_VDCS_VIDEO_FUNC_PARAM
+AlarmTime	.\include\CmdDefine.h	/^	VIDEO_ALARM_TIME AlarmTime;$/;"	m	struct:_SM_VDCS_VIDEO_ALARM_TIME
+AlarmType	.\include\Analyze.h	/^	uint16    	AlarmType;$/;"	m	struct:_T_CAMERA_FUNC_HUMAN_ALARM
+AlarmType	.\include\Analyze.h	/^	uint16    	AlarmType;$/;"	m	struct:_T_CAMERA_FUNC_OTH_ALARM
+AlarmType	.\include\Analyze.h	/^	uint16    	AlarmType;$/;"	m	struct:_T_CAMERA_FUNC_RGN_ALARM
+AlarmType	.\include\CmdDefine.h	/^	uint16    	AlarmType;      \/* AlarmType refer to enum WarnType *\/$/;"	m	struct:_SM_VDCS_VIDEO_FUNC_PARAM
+AnalyzeNUM	.\include\CmdDefine.h	/^		uint8       AnalyzeNUM;$/;"	m	struct:_SM_VDCS_VIDEO_CAM_TYPE
+AnalyzeServerRegister	.\tcpclient\Tcpclient.cpp	/^static int AnalyzeServerRegister(PT_TcpClient pt_TcpClient) $/;"	f	file:
+AnalyzeType	.\include\CmdDefine.h	/^		uint16      AnalyzeType;$/;"	m	struct:_SM_VDCS_VIDEO_CAM_TYPE
+AnalyzeType	.\include\CmdDefine.h	/^		uint16      AnalyzeType;$/;"	m	struct:_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+AutoWarn	.\include\Analyze.h	/^	uint8  	    AutoWarn;$/;"	m	struct:_T_CAMERA_FUNC_HUMAN_ALARM
+AutoWarn	.\include\Analyze.h	/^	uint8  	    AutoWarn;$/;"	m	struct:_T_CAMERA_FUNC_OTH_ALARM
+AutoWarn	.\include\Analyze.h	/^	uint8  	    AutoWarn;$/;"	m	struct:_T_CAMERA_FUNC_RGN_ALARM
+BOOL	.\include\Common.h	/^typedef int           BOOL;$/;"	t
+BuffMutex	.\include\VideoStream.h	/^	pthread_mutex_t   BuffMutex;$/;"	m	class:VideoStream
+CAM_MAX_LEN	.\include\CmdDefine.h	16;"	d
+CAnaThread	.\analyze\AnaThread.cpp	/^CAnaThread::CAnaThread(uint8 index)$/;"	f	class:CAnaThread
+CAnaThread	.\include\AnaThread.h	/^class CAnaThread$/;"	c
+CCamThread	.\analyze\CamThread.cpp	/^CCamThread::CCamThread(string videostream,uint8 index)$/;"	f	class:CCamThread
+CCamThread	.\include\CamThread.h	/^class CCamThread : public  Runnable$/;"	c
+COMMON_PACKET_HEAD	.\include\CmdDefine.h	/^typedef struct COMMON_PACKET_HEAD$/;"	s
+CXmlParser	.\include\XmlParser.h	/^class CXmlParser$/;"	c
+CXmlParser	.\xmlparser\XmlParser.cpp	/^CXmlParser::CXmlParser(char* infile)$/;"	f	class:CXmlParser
+CamAnalyze	.\include\Analyze.h	/^	Canalyze   CamAnalyze;                  \/* camera analyze class *\/$/;"	m	struct:_T_SINGLE_CAMERA
+CameStatus	.\include\Analyze.h	/^	uint8       CameStatus;$/;"	m	struct:_T_CAMERA_FIXED_PARAM
+CameUri	.\include\CmdDefine.h	/^		char   	    CameUri[SINGLE_URI_LEN_128];$/;"	m	struct:_SM_VDCS_VIDEO_CAM_TYPE
+CameUri	.\include\CmdDefine.h	/^		char   	    CameUri[SINGLE_URI_LEN_128];$/;"	m	struct:_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+Canalyze	.\analyze\Analyze.cpp	/^Canalyze::Canalyze()$/;"	f	class:Canalyze
+Canalyze	.\include\Analyze.h	/^class Canalyze$/;"	c
+ChangRate	.\include\Analyze.h	/^	float       ChangRate;                   \/* rate of change *\/$/;"	m	struct:_T_CAMERA_FUNC_RGN_ALARM
+ChangRate	.\include\CmdDefine.h	/^		float       ChangRate;      \/* RegionDetect needs *\/$/;"	m	struct:_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+ChangRate	.\include\CmdDefine.h	/^	float       ChangRate;      \/* RegionDetect needs *\/$/;"	m	struct:_SM_VDCS_VIDEO_FUNC_PARAM
+ClientSendHreatbeat	.\tcpclient\Tcpclient.cpp	/^static int ClientSendHreatbeat(PT_TcpClient pt_TcpClient)$/;"	f	file:
+CompressedLen	.\include\CmdDefine.h	/^	uint32	CompressedLen;		 \/\/The length of the compressed packet$/;"	m	struct:COMMON_PACKET_HEAD
+DEBUG	.\include\Common.h	78;"	d
+DEBUGARGS	.\include\Common.h	87;"	d
+Day	.\include\CmdDefine.h	/^	uint8   Day;$/;"	m	struct:_SM_VDCS_VIDEO_ALARM_TIME
+DetectEn	.\include\Analyze.h	/^	uint8       DetectEn;$/;"	m	struct:_T_CAMERA_FUNC_OTH_ALARM
+DetectEn	.\include\Analyze.h	/^	uint8       DetectEn;$/;"	m	struct:_T_CAMERA_FUNC_RGN_ALARM
+DeviceType	.\include\CmdDefine.h	/^enum DeviceType {      			\/* DeviceType *\/$/;"	g
+DeviceTypeGuard	.\include\CmdDefine.h	/^	DeviceTypeGuard,$/;"	e	enum:DeviceType
+DeviceTypeLock	.\include\CmdDefine.h	/^	DeviceTypeLock,$/;"	e	enum:DeviceType
+DeviceTypeMcu	.\include\CmdDefine.h	/^	DeviceTypeMcu,$/;"	e	enum:DeviceType
+DeviceTypeNetCamera	.\include\CmdDefine.h	/^	DeviceTypeNetCamera = 1,	\/\/IPCAMERA$/;"	e	enum:DeviceType
+DeviceTypeNetControl	.\include\CmdDefine.h	/^	DeviceTypeNetControl,$/;"	e	enum:DeviceType
+DeviceTypeRecorder	.\include\CmdDefine.h	/^	DeviceTypeRecorder,$/;"	e	enum:DeviceType
+DeviceTypeSpeak	.\include\CmdDefine.h	/^	DeviceTypeSpeak,$/;"	e	enum:DeviceType
+DeviceTypeWarn	.\include\CmdDefine.h	/^	DeviceTypeWarn,$/;"	e	enum:DeviceType
+DeviceTypeWork	.\include\CmdDefine.h	/^	DeviceTypeWork,$/;"	e	enum:DeviceType
+DeviceTypeYA	.\include\CmdDefine.h	/^	DeviceTypeYA,$/;"	e	enum:DeviceType
+DirectionLines	.\include\Analyze.h	/^	vector< Line >        DirectionLines;$/;"	m	struct:_T_CAMERA_FUNC_HUMAN_ALARM
+En	.\include\Analyze.h	/^  uint8 En;$/;"	m	struct:_ALARM_DAY
+Enable	.\include\Analyze.h	/^  uint8      Enable;$/;"	m	struct:_T_SINGLE_CAMERA
+Enable	.\include\CmdDefine.h	/^		uint8       Enable;   \/* 0 disable \/ 1 enable *\/$/;"	m	struct:_SM_VDCS_VIDEO_CAM_TYPE
+Enable	.\include\CmdDefine.h	/^	uint8   Enable;$/;"	m	struct:_SM_VDCS_VIDEO_ALARM_TIME
+EncryptLen	.\include\CmdDefine.h	/^	uint32  EncryptLen;				 \/\/Data packets Len - encrypted$/;"	m	struct:COMMON_PACKET_HEAD
+End	.\include\Analyze.h	/^	T_AlarmTime End;$/;"	m	struct:_ALARM_TIME_INT
+EndTime	.\include\CmdDefine.h	/^	char   EndTime[6];$/;"	m	struct:_ALARM_TIME
+EndX	.\include\CmdDefine.h	/^	uint16 	EndX;					\/\/EndX    if draw is rectangle  means width$/;"	m	struct:_VIDEO_DRAW
+EndY	.\include\CmdDefine.h	/^	uint16 	EndY;					\/\/EndY    if draw is rectangle  means height$/;"	m	struct:_VIDEO_DRAW
+FireDetect	.\include\CmdDefine.h	/^	FireDetect 		= 0x0010,$/;"	e	enum:WarnType
+FixedObjDetect	.\include\CmdDefine.h	/^	FixedObjDetect= 0x0008,$/;"	e	enum:WarnType
+Flag	.\include\Analyze.h	/^	uint8       Flag;                  \/*  0 none  1 monitor  2 door 3 ALL  *\/$/;"	m	struct:_T_CAMERA_FUNC_HUMAN_ALARM
+GenderDetect	.\include\CmdDefine.h	/^	GenderDetect  = 0x0040  \/\/????????????????????$/;"	e	enum:WarnType
+GetCamParam	.\analyze\CamThread.cpp	/^int CCamThread::GetCamParam()$/;"	f	class:CCamThread
+GetReadFrame	.\include\VideoStream.h	/^	Mat & GetReadFrame() {return ReadFrame;}$/;"	f	class:VideoStream
+GetServerParam	.\xmlparser\XmlParser.cpp	/^void CXmlParser::GetServerParam(T_ServerParam &t_ServerParam)$/;"	f	class:CXmlParser
+HumanDetect	.\include\CmdDefine.h	/^	HumanDetect 	=	0x0001,$/;"	e	enum:WarnType
+HumanDetectEn	.\include\Analyze.h	/^	uint8       HumanDetectEn;$/;"	m	struct:_T_CAMERA_FUNC_HUMAN_ALARM
+IP_LEN_16	.\include\CmdDefine.h	11;"	d
+Init	.\analyze\VideoStream.cpp	/^bool VideoStream::Init()$/;"	f	class:VideoStream
+MaxHumanNum	.\include\CmdDefine.h	/^		uint16      MaxHumanNum;    \/* HumanDetect needs *\/$/;"	m	struct:_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+MaxHumanNum	.\include\CmdDefine.h	/^	uint16      MaxHumanNum;    \/* HumanDetect needs *\/$/;"	m	struct:_SM_VDCS_VIDEO_FUNC_PARAM
+MaxNum	.\include\Analyze.h	/^	uint16      MaxNum;$/;"	m	struct:_T_CAMERA_FUNC_HUMAN_ALARM
+MonitorZoneRects	.\include\Analyze.h	/^	vector< Rect >        MonitorZoneRects;$/;"	m	struct:_T_CAMERA_FUNC_HUMAN_ALARM
+PASSWORD_LEN_10	.\include\CmdDefine.h	13;"	d
+PT_PacketHead	.\include\CmdDefine.h	/^} T_PacketHead,*PT_PacketHead;$/;"	t	typeref:struct:COMMON_PACKET_HEAD
+PT_ServerMess	.\include\TcpCom.h	/^}T_ServerMess,*PT_ServerMess;$/;"	t	typeref:struct:_server_mess
+PT_TcpClient	.\include\TcpCom.h	/^}T_TcpClient,*PT_TcpClient;$/;"	t	typeref:struct:_tcp_client
+PkgNum	.\include\CmdDefine.h	/^		uint16      PkgNum;         \/* structure refer to VIDEO_DRAW *\/$/;"	m	struct:_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+PkgNum	.\include\CmdDefine.h	/^	uint16      PkgNum;         \/* structure refer to VIDEO_DRAW *\/$/;"	m	struct:_SM_VDCS_VIDEO_FUNC_PARAM
+ReadFrame	.\include\AnaThread.h	/^	Mat   ReadFrame;$/;"	m	class:CAnaThread
+ReadFrame	.\include\CamThread.h	/^	Mat   ReadFrame;$/;"	m	class:CCamThread
+ReadFrame	.\include\VideoStream.h	/^	Mat ReadFrame;$/;"	m	class:VideoStream
+Rects	.\include\Analyze.h	/^	vector< Rect >        Rects;$/;"	m	struct:_T_CAMERA_FUNC_OTH_ALARM
+Rects	.\include\Analyze.h	/^	vector< Rect >        Rects;$/;"	m	struct:_T_CAMERA_FUNC_RGN_ALARM
+RegionDetect	.\include\CmdDefine.h	/^	RegionDetect 	= 0x0004,$/;"	e	enum:WarnType
+Reserve1	.\include\Analyze.h	/^	uint16      Reserve1;$/;"	m	struct:_T_CAMERA_FUNC_HUMAN_ALARM
+Reserve2	.\include\Analyze.h	/^	uint16      Reserve2;$/;"	m	struct:_T_CAMERA_FUNC_HUMAN_ALARM
+ResidueDetect	.\include\CmdDefine.h	/^	ResidueDetect =	0x0020,$/;"	e	enum:WarnType
+SERVER_DATA_ERR	.\include\TcpCom.h	/^	SERVER_DATA_ERR =0x001,$/;"	e	enum:__anon1
+SINGLE_URI_LEN_128	.\include\CmdDefine.h	17;"	d
+SM_ANAY_HEATBEAT	.\include\CmdDefine.h	/^	SM_ANAY_HEATBEAT = 0X8003$/;"	e	enum:ANAY_VDCS_CMD
+SM_ANAY_VDCS_DEVICE_STATUS	.\include\CmdDefine.h	/^	SM_ANAY_VDCS_DEVICE_STATUS ,$/;"	e	enum:ANAY_VDCS_CMD
+SM_ANAY_VDCS_REGISTER	.\include\CmdDefine.h	/^	SM_ANAY_VDCS_REGISTER = 0x0400,$/;"	e	enum:ANAY_VDCS_CMD
+SM_ANAY_VDCS_WARN_INFO	.\include\CmdDefine.h	/^	SM_ANAY_VDCS_WARN_INFO,$/;"	e	enum:ANAY_VDCS_CMD
+SM_VDCS_ANAY_DEVICE_STATUS_ACK	.\include\CmdDefine.h	/^	SM_VDCS_ANAY_DEVICE_STATUS_ACK,$/;"	e	enum:ANAY_VDCS_CMD
+SM_VDCS_ANAY_PUSH_CAMERA_PARAM	.\include\CmdDefine.h	/^	SM_VDCS_ANAY_PUSH_CAMERA_PARAM,      \/\/ set param and push$/;"	e	enum:ANAY_VDCS_CMD
+SM_VDCS_ANAY_PUSH_CAMERA_TYPE	.\include\CmdDefine.h	/^	SM_VDCS_ANAY_PUSH_CAMERA_TYPE,       \/\/ set type and push$/;"	e	enum:ANAY_VDCS_CMD
+SM_VDCS_ANAY_REGISTER_ACK	.\include\CmdDefine.h	/^	SM_VDCS_ANAY_REGISTER_ACK,$/;"	e	enum:ANAY_VDCS_CMD
+SM_VDCS_ANAY_REGISTER_PUSH_CAMERA	.\include\CmdDefine.h	/^	SM_VDCS_ANAY_REGISTER_PUSH_CAMERA,   \/\/ REGISTER push camera if none means no camera$/;"	e	enum:ANAY_VDCS_CMD
+SM_VDCS_ANAY_WARN_INFO_ACK	.\include\CmdDefine.h	/^	SM_VDCS_ANAY_WARN_INFO_ACK,$/;"	e	enum:ANAY_VDCS_CMD
+ST_SM_VDCS_VIDEO_ALARM_TIME	.\include\CmdDefine.h	/^}ST_SM_VDCS_VIDEO_ALARM_TIME;$/;"	t	typeref:struct:_SM_VDCS_VIDEO_ALARM_TIME
+ST_SM_VDCS_VIDEO_CAM_TYPE	.\include\CmdDefine.h	/^}ST_SM_VDCS_VIDEO_CAM_TYPE;$/;"	t	typeref:struct:_SM_VDCS_VIDEO_CAM_TYPE
+ST_SM_VDCS_VIDEO_FUNC_PARAM	.\include\CmdDefine.h	/^}ST_SM_VDCS_VIDEO_FUNC_PARAM;$/;"	t	typeref:struct:_SM_VDCS_VIDEO_FUNC_PARAM
+ST_SM_VDCS_VIDEO_REGISTER_PUSH_CAM	.\include\CmdDefine.h	/^}ST_SM_VDCS_VIDEO_REGISTER_PUSH_CAM;$/;"	t	typeref:struct:_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+ServerCfg	.\main.cpp	/^char ServerCfg[20] = "Server.xml";$/;"	v
+SmokeDetect	.\include\CmdDefine.h	/^	SmokeDetect 	=	0x0002,$/;"	e	enum:WarnType
+Start	.\include\Analyze.h	/^	T_AlarmTime Start;$/;"	m	struct:_ALARM_TIME_INT
+StartTime	.\include\CmdDefine.h	/^	char   StartTime[6];$/;"	m	struct:_ALARM_TIME
+StartX	.\include\CmdDefine.h	/^	uint16 	StartX;				\/\/StartX$/;"	m	struct:_VIDEO_DRAW
+StartY	.\include\CmdDefine.h	/^	uint16 	StartY;				\/\/StartY$/;"	m	struct:_VIDEO_DRAW
+T_AlarmTime	.\include\Analyze.h	/^}T_AlarmTime;  \/* time structure h-m*\/$/;"	t	typeref:struct:_ALARM_TIME_
+T_CAM_FIXED_PARAM	.\include\Analyze.h	/^}T_CAM_FIXED_PARAM; \/* camera Fixed parameters *\/$/;"	t	typeref:struct:_T_CAMERA_FIXED_PARAM
+T_CAM_HUM_ALARM	.\include\Analyze.h	/^}T_CAM_HUM_ALARM;$/;"	t	typeref:struct:_T_CAMERA_FUNC_HUMAN_ALARM
+T_CAM_OTH_ALARM	.\include\Analyze.h	/^}T_CAM_OTH_ALARM;$/;"	t	typeref:struct:_T_CAMERA_FUNC_OTH_ALARM
+T_CAM_RGN_ALARM	.\include\Analyze.h	/^}T_CAM_RGN_ALARM;$/;"	t	typeref:struct:_T_CAMERA_FUNC_RGN_ALARM
+T_CAM_VAR_PARAM	.\include\Analyze.h	/^}T_CAM_VAR_PARAM;$/;"	t	typeref:struct:_T_CAMERA_VAR_PARAM
+T_PACKETHEAD_MAGIC	.\include\CmdDefine.h	9;"	d
+T_PacketHead	.\include\CmdDefine.h	/^} T_PacketHead,*PT_PacketHead;$/;"	t	typeref:struct:COMMON_PACKET_HEAD
+T_SINGLE_CAMERA	.\include\Analyze.h	/^}T_SINGLE_CAMERA;  \/* single camera param *\/$/;"	t	typeref:struct:_T_SINGLE_CAMERA
+T_ServerMess	.\include\TcpCom.h	/^}T_ServerMess,*PT_ServerMess;$/;"	t	typeref:struct:_server_mess
+T_ServerParam	.\include\XmlParser.h	/^}T_ServerParam;$/;"	t	typeref:struct:_SERVER_PARAM
+T_TcpClient	.\include\TcpCom.h	/^}T_TcpClient,*PT_TcpClient;$/;"	t	typeref:struct:_tcp_client
+Type	.\include\CmdDefine.h	/^	uint16  Type;					\/\/1 monitor 2 Inward and outward 3 region$/;"	m	struct:_VIDEO_DRAW
+USERNAME_LEN_10	.\include\CmdDefine.h	12;"	d
+UnCompressedLen	.\include\CmdDefine.h	/^	uint32	UnCompressedLen;	 \/\/UnCompressed packet length$/;"	m	struct:COMMON_PACKET_HEAD
+UnEncryptLen	.\include\CmdDefine.h	/^	uint32  UnEncryptLen;			 \/\/Data packets Len - Before the encryption$/;"	m	struct:COMMON_PACKET_HEAD
+VIDEO_ALARM_TIME	.\include\CmdDefine.h	/^}VIDEO_ALARM_TIME;$/;"	t	typeref:struct:_VIDEO_ALARM_TIME
+VIDEO_DRAW	.\include\CmdDefine.h	/^}VIDEO_DRAW;$/;"	t	typeref:struct:_VIDEO_DRAW
+VideoStream	.\analyze\VideoStream.cpp	/^VideoStream::VideoStream()$/;"	f	class:VideoStream
+VideoStream	.\include\VideoStream.h	/^class VideoStream$/;"	c
+WEEK_DAY_LEN_7	.\include\CmdDefine.h	14;"	d
+WarnType	.\include\CmdDefine.h	/^enum WarnType  \/* WarnType *\/$/;"	g
+_ALARM_DAY	.\include\Analyze.h	/^typedef struct _ALARM_DAY{$/;"	s
+_ALARM_DAY_INT	.\include\Analyze.h	/^typedef struct _ALARM_DAY_INT{$/;"	s
+_ALARM_TIME	.\include\CmdDefine.h	/^	_ALARM_TIME(){$/;"	f	struct:_ALARM_TIME
+_ALARM_TIME	.\include\CmdDefine.h	/^typedef struct _ALARM_TIME{$/;"	s
+_ALARM_TIME_	.\include\Analyze.h	/^typedef struct _ALARM_TIME_{$/;"	s
+_ALARM_TIME_INT	.\include\Analyze.h	/^typedef struct _ALARM_TIME_INT{$/;"	s
+_ANALYZE_H_	.\include\Analyze.h	3;"	d
+_ANA_THREAD_H_	.\include\AnaThread.h	2;"	d
+_CAM_THREAD_H_	.\include\CamThread.h	2;"	d
+_CMDDEFINE_H_	.\include\CmdDefine.h	2;"	d
+_COMMON_H_	.\include\Common.h	2;"	d
+_SERVER_PARAM	.\include\XmlParser.h	/^typedef struct   _SERVER_PARAM{$/;"	s
+_SM_VDCS_VIDEO_ALARM_TIME	.\include\CmdDefine.h	/^	_SM_VDCS_VIDEO_ALARM_TIME(){$/;"	f	struct:_SM_VDCS_VIDEO_ALARM_TIME
+_SM_VDCS_VIDEO_ALARM_TIME	.\include\CmdDefine.h	/^typedef struct _SM_VDCS_VIDEO_ALARM_TIME{$/;"	s
+_SM_VDCS_VIDEO_CAM_TYPE	.\include\CmdDefine.h	/^		_SM_VDCS_VIDEO_CAM_TYPE(){$/;"	f	struct:_SM_VDCS_VIDEO_CAM_TYPE
+_SM_VDCS_VIDEO_CAM_TYPE	.\include\CmdDefine.h	/^typedef struct  _SM_VDCS_VIDEO_CAM_TYPE{$/;"	s
+_SM_VDCS_VIDEO_FUNC_PARAM	.\include\CmdDefine.h	/^	_SM_VDCS_VIDEO_FUNC_PARAM(){$/;"	f	struct:_SM_VDCS_VIDEO_FUNC_PARAM
+_SM_VDCS_VIDEO_FUNC_PARAM	.\include\CmdDefine.h	/^typedef struct _SM_VDCS_VIDEO_FUNC_PARAM{$/;"	s
+_SM_VDCS_VIDEO_REGISTER_PUSH_CAM	.\include\CmdDefine.h	/^		_SM_VDCS_VIDEO_REGISTER_PUSH_CAM(){$/;"	f	struct:_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+_SM_VDCS_VIDEO_REGISTER_PUSH_CAM	.\include\CmdDefine.h	/^typedef struct  _SM_VDCS_VIDEO_REGISTER_PUSH_CAM{$/;"	s
+_TCPCOM_H_	.\include\TcpCom.h	2;"	d
+_T_CAMERA_FIXED_PARAM	.\include\Analyze.h	/^typedef struct _T_CAMERA_FIXED_PARAM{$/;"	s
+_T_CAMERA_FUNC_HUMAN_ALARM	.\include\Analyze.h	/^typedef struct _T_CAMERA_FUNC_HUMAN_ALARM{$/;"	s
+_T_CAMERA_FUNC_OTH_ALARM	.\include\Analyze.h	/^typedef struct _T_CAMERA_FUNC_OTH_ALARM{$/;"	s
+_T_CAMERA_FUNC_RGN_ALARM	.\include\Analyze.h	/^typedef struct _T_CAMERA_FUNC_RGN_ALARM{$/;"	s
+_T_CAMERA_VAR_PARAM	.\include\Analyze.h	/^typedef struct _T_CAMERA_VAR_PARAM{  \/\/ six alarm$/;"	s
+_T_SINGLE_CAMERA	.\include\Analyze.h	/^typedef struct _T_SINGLE_CAMERA{$/;"	s
+_VIDEOSTREAM_H_	.\include\VideoStream.h	2;"	d
+_VIDEO_ALARM_TIME	.\include\CmdDefine.h	/^	_VIDEO_ALARM_TIME(){$/;"	f	struct:_VIDEO_ALARM_TIME
+_VIDEO_ALARM_TIME	.\include\CmdDefine.h	/^typedef struct _VIDEO_ALARM_TIME{$/;"	s
+_VIDEO_DRAW	.\include\CmdDefine.h	/^	_VIDEO_DRAW(){$/;"	f	struct:_VIDEO_DRAW
+_VIDEO_DRAW	.\include\CmdDefine.h	/^typedef struct _VIDEO_DRAW  \/\/ pkg means special parameter$/;"	s
+_XMLPARSER_H_	.\include\XmlParser.h	3;"	d
+_server_mess	.\include\TcpCom.h	/^typedef struct _server_mess{$/;"	s
+_tcp_client	.\include\TcpCom.h	/^typedef struct _tcp_client{$/;"	s
+byte	.\include\Common.h	/^typedef unsigned char byte;$/;"	t
+chksum	.\include\CmdDefine.h	/^	uint16	chksum;					   \/\/The checksum$/;"	m	struct:COMMON_PACKET_HEAD
+client_event_callbak	.\tcpclient\Tcpclient.cpp	/^static void client_event_callbak(struct bufferevent *bev, short event, void *arg)	$/;"	f	file:
+client_read_callback	.\tcpclient\Tcpclient.cpp	/^static void client_read_callback(struct bufferevent* bev, void* arg)	$/;"	f	file:
+client_timer_callbak	.\tcpclient\Tcpclient.cpp	/^static void client_timer_callbak(int fd, short events, void * arg) $/;"	f	file:
+cmd	.\include\CmdDefine.h	/^	uint16	cmd;					     \/\/CMD ID$/;"	m	struct:COMMON_PACKET_HEAD
+day	.\include\Analyze.h	/^  ALARM_DAY day[WEEK_DAY_LEN_7];$/;"	m	struct:_T_CAMERA_FUNC_HUMAN_ALARM
+day	.\include\Analyze.h	/^  ALARM_DAY day[WEEK_DAY_LEN_7];$/;"	m	struct:_T_CAMERA_FUNC_OTH_ALARM
+day	.\include\Analyze.h	/^  ALARM_DAY day[WEEK_DAY_LEN_7];$/;"	m	struct:_T_CAMERA_FUNC_RGN_ALARM
+dayTime	.\include\Analyze.h	/^  ALARM_DAY_INT dayTime;$/;"	m	struct:_ALARM_DAY
+dbgprint	.\include\Common.h	81;"	d
+dbgprint	.\include\Common.h	84;"	d
+encrypt	.\include\CmdDefine.h	/^	uint16  encrypt;				   \/\/Encryption type$/;"	m	struct:COMMON_PACKET_HEAD
+false	.\include\Common.h	68;"	d
+hour	.\include\Analyze.h	/^	uint8 hour;$/;"	m	struct:_ALARM_TIME_
+iAnayRegister	.\include\TcpCom.h	/^	    int    iAnayRegister;$/;"	m	struct:_server_mess
+iClientFd	.\include\TcpCom.h	/^	    int    iClientFd;$/;"	m	struct:_server_mess
+iConnectFlag	.\include\TcpCom.h	/^	    int    iConnectFlag;$/;"	m	struct:_server_mess
+ialive	.\include\TcpCom.h	/^	    int    ialive;$/;"	m	struct:_server_mess
+index	.\include\Analyze.h	/^	uint8       index;$/;"	m	struct:_T_CAMERA_FIXED_PARAM
+ip	.\include\Analyze.h	/^  char        ip[IP_LEN_16];$/;"	m	struct:_T_CAMERA_FIXED_PARAM
+ip	.\include\CmdDefine.h	/^		char        ip[IP_LEN_16];$/;"	m	struct:_SM_VDCS_VIDEO_CAM_TYPE
+ip	.\include\CmdDefine.h	/^		char        ip[IP_LEN_16];$/;"	m	struct:_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+ip	.\include\CmdDefine.h	/^	char        ip[IP_LEN_16];$/;"	m	struct:_SM_VDCS_VIDEO_FUNC_PARAM
+m_Camera	.\include\Analyze.h	/^	CCamThread m_Camera;$/;"	m	class:Canalyze
+m_CameraFlag	.\include\CamThread.h	/^	uint8  m_CameraFlag;$/;"	m	class:CCamThread
+m_ConfigDocument	.\include\XmlParser.h	/^	TiXmlDocument *	m_ConfigDocument;$/;"	m	class:CXmlParser
+m_RootElement	.\include\XmlParser.h	/^	TiXmlElement *	m_RootElement;$/;"	m	class:CXmlParser
+m_ServerElement	.\include\XmlParser.h	/^	TiXmlElement * 	m_ServerElement;$/;"	m	class:CXmlParser
+m_ServerIpElement	.\include\XmlParser.h	/^	TiXmlElement *	m_ServerIpElement;$/;"	m	class:CXmlParser
+m_ServerPortElement	.\include\XmlParser.h	/^	TiXmlElement *	m_ServerPortElement ;$/;"	m	class:CXmlParser
+m_cols	.\include\CamThread.h	/^	int 	 	m_cols; 	  \/* width *\/$/;"	m	class:CCamThread
+m_fps	.\include\CamThread.h	/^	int	  	m_fps;$/;"	m	class:CCamThread
+m_i_frameFinished	.\include\VideoStream.h	/^	int m_i_frameFinished;$/;"	m	class:VideoStream
+m_index	.\include\AnaThread.h	/^	uint8 m_index;$/;"	m	class:CAnaThread
+m_index	.\include\CamThread.h	/^	uint8  m_index;$/;"	m	class:CCamThread
+m_rows	.\include\CamThread.h	/^	int 	 	m_rows; 	 \/* high *\/$/;"	m	class:CCamThread
+m_str_url	.\include\VideoStream.h	/^	String m_str_url ;$/;"	m	class:VideoStream
+m_vcap	.\include\CamThread.h	/^	VideoCapture  	m_vcap;$/;"	m	class:CCamThread
+m_videoStream	.\include\CamThread.h	/^	string m_videoStream;$/;"	m	class:CCamThread
+magic	.\include\CmdDefine.h	/^	uint32	magic;					   \/\/head$/;"	m	struct:COMMON_PACKET_HEAD
+main	.\main.cpp	/^int main(int argc,char**argv)$/;"	f
+min	.\include\Analyze.h	/^	uint8 min;$/;"	m	struct:_ALARM_TIME_
+pAVCodecContext	.\include\VideoStream.h	/^	AVCodecContext *pAVCodecContext;$/;"	m	class:VideoStream
+pAVFormatContext	.\include\VideoStream.h	/^	AVFormatContext *pAVFormatContext;$/;"	m	class:VideoStream
+pAVFrame	.\include\VideoStream.h	/^	AVFrame *pAVFrame;$/;"	m	class:VideoStream
+pAVPacket	.\include\VideoStream.h	/^	AVPacket pAVPacket;$/;"	m	class:VideoStream
+pAVPicture	.\include\VideoStream.h	/^	AVPicture  pAVPicture;$/;"	m	class:VideoStream
+pSwsContext	.\include\VideoStream.h	/^	SwsContext * pSwsContext;$/;"	m	class:VideoStream
+password	.\include\Analyze.h	/^	char        password[PASSWORD_LEN_10];$/;"	m	struct:_T_CAMERA_FIXED_PARAM
+password	.\include\CmdDefine.h	/^		char        password[PASSWORD_LEN_10];$/;"	m	struct:_SM_VDCS_VIDEO_CAM_TYPE
+password	.\include\CmdDefine.h	/^		char        password[PASSWORD_LEN_10];$/;"	m	struct:_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+play	.\analyze\VideoStream.cpp	/^void VideoStream::play()$/;"	f	class:VideoStream
+pt_PServerBase	.\include\TcpCom.h	/^	struct event_base *      pt_PServerBase;$/;"	m	struct:_tcp_client	typeref:struct:_tcp_client::event_base
+pt_PServerBev	.\include\TcpCom.h	/^	struct bufferevent*      pt_PServerBev;$/;"	m	struct:_tcp_client	typeref:struct:_tcp_client::bufferevent
+quit	.\include\AnaThread.h	/^	void quit()  $/;"	f	class:CAnaThread
+quitFlag	.\include\AnaThread.h	/^	 bool            quitFlag;     $/;"	m	class:CAnaThread
+run	.\analyze\AnaThread.cpp	/^void CAnaThread::run()$/;"	f	class:CAnaThread
+run	.\analyze\CamThread.cpp	/^void CCamThread::run()$/;"	f	class:CCamThread
+server_ip	.\include\XmlParser.h	/^	char		server_ip[20];$/;"	m	struct:_SERVER_PARAM
+server_port	.\include\XmlParser.h	/^	char		server_port[8];$/;"	m	struct:_SERVER_PARAM
+setUrl	.\analyze\VideoStream.cpp	/^void VideoStream::setUrl(String url)$/;"	f	class:VideoStream
+startStream	.\analyze\VideoStream.cpp	/^void VideoStream::startStream()$/;"	f	class:VideoStream
+stopStream	.\analyze\VideoStream.cpp	/^void VideoStream::stopStream()$/;"	f	class:VideoStream
+t_CamFireAlarm	.\include\Analyze.h	/^	T_CAM_OTH_ALARM    t_CamFireAlarm;                \/*  Fire alarm parameters *\/$/;"	m	struct:_T_CAMERA_VAR_PARAM
+t_CamFixedObjAlarm	.\include\Analyze.h	/^	T_CAM_OTH_ALARM    t_CamFixedObjAlarm;            \/*  Fixed object alarm parameters *\/$/;"	m	struct:_T_CAMERA_VAR_PARAM
+t_CamHumAlarm	.\include\Analyze.h	/^  T_CAM_HUM_ALARM    t_CamHumAlarm;                 \/*  human detect alarm parameters   *\/$/;"	m	struct:_T_CAMERA_VAR_PARAM
+t_CamLostAlarm	.\include\Analyze.h	/^  T_CAM_OTH_ALARM    t_CamLostAlarm;                \/*  Residual alarm parameters *\/$/;"	m	struct:_T_CAMERA_VAR_PARAM
+t_CamRegionAlarm	.\include\Analyze.h	/^	T_CAM_RGN_ALARM    t_CamRegionAlarm;              \/*  region alarm parameters  *\/$/;"	m	struct:_T_CAMERA_VAR_PARAM
+t_CamSmkAlarm	.\include\Analyze.h	/^	T_CAM_OTH_ALARM    t_CamSmkAlarm;                 \/*  Smoke alarm parameters *\/$/;"	m	struct:_T_CAMERA_VAR_PARAM
+t_Camfixedparam	.\include\Analyze.h	/^	T_CAM_FIXED_PARAM    t_Camfixedparam;   \/* camera Fixed parameters *\/$/;"	m	struct:_T_SINGLE_CAMERA
+t_Camvarparam	.\include\Analyze.h	/^ 	T_CAM_VAR_PARAM      t_Camvarparam;     \/* camera Variable parameter *\/$/;"	m	struct:_T_SINGLE_CAMERA
+t_PSeverAddr	.\include\TcpCom.h	/^	struct sockaddr_in       t_PSeverAddr;$/;"	m	struct:_tcp_client	typeref:struct:_tcp_client::sockaddr_in
+t_ServerMess	.\main.cpp	/^T_ServerMess  	t_ServerMess;$/;"	v
+t_ServerParam	.\main.cpp	/^T_ServerParam 	t_ServerParam;$/;"	v
+t_camera	.\main.cpp	/^T_SINGLE_CAMERA t_camera[CAM_MAX_LEN];$/;"	v
+tcp_client_thread	.\tcpclient\Tcpclient.cpp	/^void * tcp_client_thread(void *param)$/;"	f
+time1	.\include\Analyze.h	/^    ALARM_TIME_INT time1;$/;"	m	struct:_ALARM_DAY_INT
+time1	.\include\CmdDefine.h	/^	ALARM_TIME time1;$/;"	m	struct:_VIDEO_ALARM_TIME
+time2	.\include\Analyze.h	/^    ALARM_TIME_INT time2;$/;"	m	struct:_ALARM_DAY_INT
+time2	.\include\CmdDefine.h	/^	ALARM_TIME time2;$/;"	m	struct:_VIDEO_ALARM_TIME
+time3	.\include\Analyze.h	/^    ALARM_TIME_INT time3;$/;"	m	struct:_ALARM_DAY_INT
+time3	.\include\CmdDefine.h	/^	ALARM_TIME time3;$/;"	m	struct:_VIDEO_ALARM_TIME
+true	.\include\Common.h	69;"	d
+uint16	.\include\Common.h	/^typedef unsigned short 		uint16;$/;"	t
+uint32	.\include\Common.h	/^typedef unsigned int      uint32;$/;"	t
+uint8	.\include\Common.h	/^typedef unsigned char  		uint8;$/;"	t
+unused	.\include\CmdDefine.h	/^	uint16	unused;					   \/\/unused$/;"	m	struct:COMMON_PACKET_HEAD
+uri	.\include\Analyze.h	/^	char        uri[SINGLE_URI_LEN_128];$/;"	m	struct:_T_CAMERA_FIXED_PARAM
+username	.\include\Analyze.h	/^  char        username[USERNAME_LEN_10];$/;"	m	struct:_T_CAMERA_FIXED_PARAM
+username	.\include\CmdDefine.h	/^		char        username[USERNAME_LEN_10];$/;"	m	struct:_SM_VDCS_VIDEO_CAM_TYPE
+username	.\include\CmdDefine.h	/^		char        username[USERNAME_LEN_10];$/;"	m	struct:_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+videoHeight	.\include\VideoStream.h	/^	int videoHeight;$/;"	m	class:VideoStream
+videoStreamIndex	.\include\VideoStream.h	/^	uint8 videoStreamIndex;$/;"	m	class:VideoStream
+videoWidth	.\include\VideoStream.h	/^	int videoWidth;$/;"	m	class:VideoStream
+~CXmlParser	.\xmlparser\XmlParser.cpp	/^CXmlParser::~CXmlParser()$/;"	f	class:CXmlParser
+~VideoStream	.\analyze\VideoStream.cpp	/^VideoStream::~VideoStream()$/;"	f	class:VideoStream

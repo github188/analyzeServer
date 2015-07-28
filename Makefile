@@ -3,7 +3,7 @@ CROSS_COMPILE =
 AS		= $(CROSS_COMPILE)as
 LD		= $(CROSS_COMPILE)ld
 CC		= $(CROSS_COMPILE)gcc
-CXX     	= $(CROSS_COMPILE)g++
+CXX   = $(CROSS_COMPILE)g++
 CPP		= $(CC) -E
 AR		= $(CROSS_COMPILE)ar
 NM		= $(CROSS_COMPILE)nm
@@ -20,22 +20,21 @@ CXXFLAGS := -Wall  -O2 -g
 CXXFLAGS += -I $(shell pwd)/include
 CXXFLAGS += $(shell pkg-config --cflags OpenCVPC) -lavformat -lavcodec -lavfilter -lavutil -lswresample -lswscale -lz -D__STDC_CONSTANT_MACROS
 
-LDLIBS    := $(shell pkg-config --libs  OpenCVPC)  -lpthread -lm -levent -ltinyxml  -lZThread
+LDLIBS   := $(shell pkg-config --libs  OpenCVPC)  -lpthread -lm -levent -ltinyxml  -lZThread
 
-export CXXFLAGS LDLIBS  
+export CXXFLAGS LDLIBS
 
 TOPDIR := $(shell pwd)
 export TOPDIR
 
 TARGET := demo
 
-
 obj-y += main.o
 obj-y += xmlparser/
 obj-y += tcpclient/
 obj-y +=analyze/
 
-all : 
+all :
 	make  -C ./ -f $(TOPDIR)/Makefile.build
 	$(CXX)  -o $(TARGET) built-in.o  $(LDLIBS) $(CXXFLAGS)
 
@@ -47,4 +46,3 @@ distclean:
 	rm -f $(shell find -name "*.o")
 	rm -f $(shell find -name "*.d")
 	rm -f $(TARGET)
-	

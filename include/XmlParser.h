@@ -4,19 +4,20 @@
 
 #include "Common.h"
 
-#include "tinyxml.h"  
-#include "tinystr.h"  
-/* 
- *	市行服务器参数
+#include "tinyxml.h"
+#include "tinystr.h"
+
+/*
+ *	city server parameters include ip / port
  */
 typedef struct   _SERVER_PARAM{
 
 	char		server_ip[20];
 	char		server_port[8];
-	
+
 }T_ServerParam;
 
-// XML分析类
+// XML parser class
 class CXmlParser
 {
 
@@ -25,20 +26,18 @@ public:
 	~CXmlParser();
 
 	void GetServerParam(T_ServerParam &t_ServerParam);
-	
+
 protected:
-	
+
 private:
-	
+
 	TiXmlDocument *	m_ConfigDocument;
 	TiXmlElement *	m_RootElement;
-	
+
 	TiXmlElement * 	m_ServerElement;
 	TiXmlElement *	m_ServerIpElement;
 	TiXmlElement *	m_ServerPortElement ;
 
-	
 };
 
 #endif
-

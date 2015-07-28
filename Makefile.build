@@ -41,5 +41,5 @@ built-in.o : $(cur_objs) $(subdir_objs)
 dep_file = .$@.d
 
 %.o : %.c
-	$(CXX) $(CXXFLAGS)  -Wp,-MD,$(dep_file) -c -o $@ $< 	
+	$(CXX) $(CXXFLAGS)  -Wp,-MD,$(dep_file) -c -o $@ $<
 .PHONY : $(PHONY)

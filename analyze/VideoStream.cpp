@@ -11,7 +11,7 @@ VideoStream::~VideoStream()
 {
 	pthread_mutex_destroy (&BuffMutex);
 }
-
+    
 void VideoStream::setUrl(String url)
 {
 	m_str_url = url;
@@ -20,7 +20,7 @@ void VideoStream::setUrl(String url)
 void VideoStream::startStream()
 {
 	videoStreamIndex=-1;
-	av_register_all();              
+	av_register_all();
 	avformat_network_init();
 	pAVFormatContext = avformat_alloc_context();
 	pAVFrame=av_frame_alloc();
@@ -37,7 +37,7 @@ void VideoStream::stopStream()
 bool VideoStream::Init()
 {
 	int iRet = -1;
-	
+
 	if(m_str_url.empty())
 	    		return false;
 	iRet=avformat_open_input(&pAVFormatContext, m_str_url.c_str(),NULL,NULL);
@@ -74,7 +74,7 @@ bool VideoStream::Init()
 	AVCodec *pAVCodec;
 
 	pAVCodec = avcodec_find_decoder(pAVCodecContext->codec_id);
-	pSwsContext = sws_getContext(videoWidth,videoHeight,PIX_FMT_YUV420P,videoWidth,videoHeight,PIX_FMT_RGB24,SWS_BICUBIC,0,0,0);
+	pSwsContext = sws_getContext(videoWidth,videoHeight,AV_PIX_FMT_YUV420P,videoWidth,videoHeight,AV_PIX_FMT_BGR24,SWS_BICUBIC,0,0,0);
 
 	iRet=avcodec_open2(pAVCodecContext,pAVCodec,NULL);
 	if (iRet<0){
@@ -85,7 +85,7 @@ bool VideoStream::Init()
 
 	dbgprint("%s(%d),initalize videostream sucess!\n",DEBUGARGS);
 	return true;
-	
+
 }
 
 void VideoStream::play()
@@ -96,7 +96,7 @@ void VideoStream::play()
             avcodec_decode_video2(pAVCodecContext, pAVFrame, &m_i_frameFinished, &pAVPacket);
             if (m_i_frameFinished){
                  pthread_mutex_lock(&BuffMutex);
-                //pSwsContext = sws_getContext(videoWidth,videoHeight,PIX_FMT_YUV420P,videoWidth,videoHeight,PIX_FMT_RGB24,SWS_BICUBIC,0,0,0);
+                //pSwsContext = sws_getContext(videoWidth,videoHeight,AV_PIX_FMT_YUV420P,videoWidth,videoHeight,AV_PIX_FMT_BGR24,SWS_BICUBIC,0,0,0);
                  sws_scale(pSwsContext,(const uint8_t* const *)pAVFrame->data,pAVFrame->linesize,0,videoHeight,pAVPicture.data,pAVPicture.linesize);
                  ReadFrame.data =pAVPicture.data[0];
                  //sws_freeContext(pSwsContext);
@@ -104,7 +104,6 @@ void VideoStream::play()
             }
         }
     }
- 
+
     av_free_packet(&pAVPacket);
 }
-

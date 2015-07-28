@@ -6,8 +6,7 @@
 #include "opencv2/contrib/contrib.hpp"
 #include "opencv2/core/core.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
-#include <opencv2/opencv.hpp>
-
+#include "opencv2/opencv.hpp"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,16 +15,16 @@
 #include <fstream>
 #include <vector>
 #include <string>
-#include <iostream> 
+#include <iostream>
 #include <sys/time.h>
 
-#include <sys/types.h>  
-#include <sys/socket.h>  
-#include <netinet/in.h>  
-#include <arpa/inet.h>  
-#include <unistd.h>  
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <unistd.h>
 #include <signal.h>
-#include <fcntl.h> 
+#include <fcntl.h>
 
 #include <event.h>
 #include <event2/bufferevent.h>
@@ -40,15 +39,14 @@
 #include <list>
 #include <map>
 
-#include <zthread/Runnable.h>  
-#include <zthread/Thread.h>  
-#include "zthread/PoolExecutor.h"  
-#include "zthread/ThreadedExecutor.h"  
-#include "zthread/ConcurrentExecutor.h"  
-#include "zthread/SynchronousExecutor.h"  
-#include "zthread/Runnable.h"  
-#include "zthread/PoolExecutor.h"    
- 
+#include <zthread/Runnable.h>
+#include <zthread/Thread.h>
+#include "zthread/PoolExecutor.h"
+#include "zthread/ThreadedExecutor.h"
+#include "zthread/ConcurrentExecutor.h"
+#include "zthread/SynchronousExecutor.h"
+#include "zthread/Runnable.h"
+#include "zthread/PoolExecutor.h"
 
 extern "C"
 {
@@ -59,12 +57,11 @@ extern "C"
 #include <libavutil/imgutils.h>
 #include <libavutil/mathematics.h>
 #include <libavutil/samplefmt.h>
-#include <libswscale/swscale.h> 
+#include <libswscale/swscale.h>
 #include <libavformat/avformat.h>
-
 }
 
-using namespace ZThread;  
+using namespace ZThread;
 using namespace std;
 using namespace cv;
 
@@ -72,11 +69,11 @@ using namespace cv;
 #define true (1)
 
 typedef unsigned char byte;
-typedef int                    BOOL;
+typedef int           BOOL;
 
 typedef unsigned char  		uint8;
 typedef unsigned short 		uint16;
-typedef unsigned int       	uint32;
+typedef unsigned int      uint32;
 
 #define DEBUG
 
@@ -90,5 +87,3 @@ typedef unsigned int       	uint32;
 #define DEBUGARGS __FILE__,__LINE__
 
 #endif
-
-
