@@ -9,8 +9,8 @@ typedef struct _T_CAMERA_FIXED_PARAM{
   char        ip[IP_LEN_16];
   char        username[USERNAME_LEN_10];
 	char        password[PASSWORD_LEN_10];
-	char        uri[SINGLE_URI_LEN_128];
-	uint8       CameStatus;
+	char        CameUri[SINGLE_URI_LEN_128];
+	//uint8       CameStatus;
 	uint8       index;
 
 }T_CAM_FIXED_PARAM; /* camera Fixed parameters */
@@ -101,10 +101,15 @@ typedef struct _T_CAMERA_VAR_PARAM{  // six alarm
 
 class Canalyze
 {
-
 public:
+  Canalyze(T_CAM_FIXED_PARAM & t_Camfixedparam);
+  ~Canalyze();
 
-	CCamThread m_Camera;
+  uint8 m_index;
+
+	CCamThread*    m_Camera;
+  CAlarmThread*  m_Alarmthread1;
+  CAlarmThread*  m_Alarmthread2;
 
 private:
 
@@ -117,9 +122,9 @@ typedef struct _T_SINGLE_CAMERA{
 
  	T_CAM_VAR_PARAM      t_Camvarparam;     /* camera Variable parameter */
 
-	Canalyze   CamAnalyze;                  /* camera analyze class */
+	Canalyze*            CamAnalyze;        /* camera analyze class */
 
-  uint8      Enable;
+  uint8                Enable;
 
 }T_SINGLE_CAMERA;  /* single camera param */
 

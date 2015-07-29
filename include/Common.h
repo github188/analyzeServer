@@ -39,15 +39,6 @@
 #include <list>
 #include <map>
 
-#include <zthread/Runnable.h>
-#include <zthread/Thread.h>
-#include "zthread/PoolExecutor.h"
-#include "zthread/ThreadedExecutor.h"
-#include "zthread/ConcurrentExecutor.h"
-#include "zthread/SynchronousExecutor.h"
-#include "zthread/Runnable.h"
-#include "zthread/PoolExecutor.h"
-
 extern "C"
 {
 #include <libavutil/opt.h>

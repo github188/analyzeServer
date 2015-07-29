@@ -28,6 +28,10 @@ typedef struct COMMON_PACKET_HEAD
 	uint16	chksum;					   //The checksum
 	uint16	unused;					   //unused
 
+	COMMON_PACKET_HEAD(){
+		memset(this, 0, sizeof(COMMON_PACKET_HEAD));
+	}
+
 } T_PacketHead,*PT_PacketHead;
 
 
@@ -73,6 +77,34 @@ enum WarnType  /* WarnType */
 	ResidueDetect =	0x0020,
 	GenderDetect  = 0x0040  //????????????????????
 };
+
+typedef struct _SM_ANAY_VDCS_REGISTER
+{
+	uint32 Position;  // Analyze Server Position
+	_SM_ANAY_VDCS_REGISTER(){
+		memset(this, 0, sizeof(_SM_ANAY_VDCS_REGISTER));
+	}
+} ST_SM_ANAY_VDCS_REGISTER;
+
+typedef struct _SM_VDCS_ANAY_REGISTER_ACK
+{
+	uint8 	Ack;    // 0 sucess / 1 faild
+	_SM_VDCS_ANAY_REGISTER_ACK(){
+		memset(this, 0, sizeof(_SM_VDCS_ANAY_REGISTER_ACK));
+	}
+} ST_SM_VDCS_ANAY_REGISTER_ACK;
+
+typedef struct _SM_ANAY_VDCS_DEVICE_STATUS
+{
+	char    ip[IP_LEN_16];
+	uint8 	DeviceType;
+	uint8 	status;             // 0 break 1 reconnect ok
+
+	_SM_ANAY_VDCS_DEVICE_STATUS(){
+		memset(this, 0, sizeof(_SM_ANAY_VDCS_DEVICE_STATUS));
+	}
+
+}ST_SM_ANAY_VDCS_DEVICE_STATUS;
 
 typedef struct _ALARM_TIME{
 
@@ -127,17 +159,28 @@ typedef struct  _SM_VDCS_VIDEO_REGISTER_PUSH_CAM{
 		char        username[USERNAME_LEN_10];
 		char        password[PASSWORD_LEN_10];
 		char   	    CameUri[SINGLE_URI_LEN_128];
-		//uint8       Enable;   /* if disable should not send */
+		//uint8       Enable;     /* if disable should not send */
+		uint8       AnalyzeNUM;   /* 1/2  other is wrong */
 		uint16      AnalyzeType;
-		ST_SM_VDCS_VIDEO_ALARM_TIME  AlarmTime[WEEK_DAY_LEN_7];
-		uint16      MaxHumanNum;    /* HumanDetect needs */
-		float       ChangRate;      /* RegionDetect needs */
-		uint16      PkgNum;         /* structure refer to VIDEO_DRAW */
 
 		_SM_VDCS_VIDEO_REGISTER_PUSH_CAM(){
 			memset(this, 0, sizeof(_SM_VDCS_VIDEO_REGISTER_PUSH_CAM));
 		}
 }ST_SM_VDCS_VIDEO_REGISTER_PUSH_CAM;
+
+typedef struct  _SM_VDCS_VIDEO_REGISTER_PUSH_CAM_ANALYZE_PARAM{
+
+	uint16      AnalyzeType;
+	ST_SM_VDCS_VIDEO_ALARM_TIME  AlarmTime[WEEK_DAY_LEN_7];
+	uint16      MaxHumanNum;    /* HumanDetect needs */
+	float       ChangRate;      /* RegionDetect needs */
+	uint16      PkgNum;         /* structure refer to VIDEO_DRAW */
+
+	_SM_VDCS_VIDEO_REGISTER_PUSH_CAM_ANALYZE_PARAM(){
+		memset(this, 0, sizeof(_SM_VDCS_VIDEO_REGISTER_PUSH_CAM_ANALYZE_PARAM));
+	}
+}ST_SM_VIDEO_PUSH_CAM_ANALYZE_PARAM;
+
 
 //SM_VDCS_ANAY_PUSH_CAMERA_TYPE
 typedef struct  _SM_VDCS_VIDEO_CAM_TYPE{

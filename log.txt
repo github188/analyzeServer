@@ -1,1 +1,11 @@
 //sudo apt-get install libzthread-2.3-2 libzthread-dev
+分析服务器启动流程
+
+第一个命令
+SM_VDCS_ANAY_REGISTER_PUSH_CAMERA
+开机启动时，注册后，市服务器将数据库里的摄像头数据提取出来发给分析服务器
+数据格式：
+
+数据包头    T_PacketHead
+第一个数据  ST_SM_VDCS_VIDEO_REGISTER_PUSH_CAM
+第二个数据

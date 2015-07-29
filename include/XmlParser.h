@@ -26,6 +26,7 @@ public:
 	~CXmlParser();
 
 	void GetServerParam(T_ServerParam &t_ServerParam);
+  void GetAnalyzeParam(uint32 &Position);
 
 protected:
 
@@ -35,9 +36,12 @@ private:
 	TiXmlElement *	m_RootElement;
 
 	TiXmlElement * 	m_ServerElement;
+	TiXmlElement *  m_AnalyzeElement;
+
 	TiXmlElement *	m_ServerIpElement;
 	TiXmlElement *	m_ServerPortElement ;
 
+  TiXmlElement *  m_AnalyzePositionElement;
 };
 
 #endif
