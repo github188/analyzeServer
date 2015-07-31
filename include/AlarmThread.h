@@ -15,7 +15,11 @@ public:
 
   Mat frame1;
   Mat frame2;
-  
+
+  uint16 WarnType;
+
+  CRegion* region;
+
   void run();
 	int  CreateAlarmThread();
 	static void* RunAlarmThread(void*  param){
