@@ -32,7 +32,7 @@ TARGET := demo
 obj-y += main.o
 obj-y += xmlparser/
 obj-y += tcpclient/
-obj-y +=analyze/
+obj-y += analyze/
 
 all :
 	make  -C ./ -f $(TOPDIR)/Makefile.build

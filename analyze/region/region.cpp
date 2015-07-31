@@ -20,9 +20,9 @@ void CRegion::motiondetective(Mat &dispalyFrame,Mat &morph)
 	bool motionAlarmDone = false;
 	Mat motionAlarmCap;
 
-	for(unsigned int i = 0;i<t_Camera.t_SinCam[m_index].t_Camvarparam.t_CamAlarmRegionAlarm.Rects.size();i++)
+	for(unsigned int i = 0;i < t_camera[m_index].t_Camvarparam.t_CamAlarmRegionAlarm.Rects.size();i++)
 	{
-		Rect rt = t_Camera.t_SinCam[m_index].t_Camvarparam.t_CamAlarmRegionAlarm.Rects[i];
+		Rect rt = t_camera[m_index].t_Camvarparam.t_CamAlarmRegionAlarm.Rects[i];
 		if(rt.x + rt.width < morph.cols && rt.y + rt.height < morph.rows)
 		{
 			Mat tmp = morph(rt);
