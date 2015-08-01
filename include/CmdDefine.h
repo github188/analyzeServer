@@ -67,6 +67,7 @@ enum DeviceType {      			/* DeviceType */
 	DeviceTypeRecorder,
 };
 
+#define WarnNumber    7 
 enum WarnType  /* WarnType */
 {
 	HumanDetect 	=	0x0001,

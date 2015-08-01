@@ -41,7 +41,8 @@ typedef struct _ALARM_DAY{
 
   uint8 En;
   ALARM_DAY_INT dayTime;
-
+  uint8 detect;
+  
 }ALARM_DAY;
 
 typedef struct _T_CAMERA_FUNC_HUMAN_ALARM{
@@ -49,7 +50,7 @@ typedef struct _T_CAMERA_FUNC_HUMAN_ALARM{
 	uint16    	AlarmType;
 	uint8  	    AutoWarn;
 	uint16      MaxNum;
-	uint8       HumanDetectEn;
+	uint8       DetectEn;
 	uint8       Flag;                  /*  0 none  1 monitor  2 door 3 ALL  */
 	uint16      Reserve1;
 	uint16      Reserve2;

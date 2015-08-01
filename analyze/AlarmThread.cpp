@@ -25,6 +25,10 @@ CAlarmThread::CAlarmThread(CCamThread** camera,uint8 cam_index,uint8 alarm_index
   videoHandler = NULL;
   fire = new CFire(m_cam_index ,&videoHandler);
 
+  smoke = new CSmoke(m_cam_index);
+
+  human = new CHuman(m_cam_index);
+
 }
 
 CAlarmThread::~CAlarmThread()
@@ -39,6 +43,11 @@ CAlarmThread::~CAlarmThread()
     delete fire;
     fire = NULL;
 
+    delete smoke;
+    smoke = NULL;
+
+    delete human;
+    human = NULL;
 }
 
 int CAlarmThread::alarmStrategy()
@@ -84,6 +93,44 @@ int CAlarmThread::alarmStrategy()
     return alarmStop;
   }
 
+  return 0;
+}
+
+int  CAlarmThread::human_detect(Mat &frame)
+{
+  int iRet = -1;
+
+  if(!frame.empty())
+  {
+      huamn->HumanAlarmRun(tmp);
+      alarm = huamn->alarm ;
+      usleep(20*1000);
+      /*
+      humanALL  	= human->humanstatis.numAll;
+			humanIN		= MAX(human->humanstatis.doorin[0],human->humanstatis.doorin[1]);//human->humanstatis.inAll;
+			humanOUT	= MAX(human->humanstatis.doorout[0],human->humanstatis.doorout[1]);//human->humanstatis.outAll;
+			for(int i=0; i<LINENUM;i++){
+				doorIN[i]		= human->humanstatis.doorin[i];
+				doorOUT[i]	= human->humanstatis.doorout[i];
+			}*/
+			//imshow(HumanAlarmWindow,HumandispalyFrame);
+  }
+  else
+  {
+      alarm = 0;
+      usleep(40*1000);
+  }
+  iRet =  alarmStrategy();
+
+  if(iRet == alarmOn)
+  {
+    //TODO: notify huamn alarm start and push rtsp
+  }
+
+  if(iRet == alarmStop)
+  {
+    //TODO: notify huamn alarm stop
+  }
   return 0;
 }
 
@@ -144,6 +191,36 @@ int  CAlarmThread::fire_detect(Mat &frame)
   }
   return 0;
 }
+
+int  CAlarmThread::smoke_detect(Mat &frame)
+{
+  int iRet = -1;
+
+  if(!frame.empty())
+  {
+      smoke->SmokeAlarmDetectRun(tmp);
+      alarm = smoke->alarm ;
+      usleep(20*1000);
+  }
+  else
+  {
+      alarm = 0;
+      usleep(40*1000);
+  }
+  iRet =  alarmStrategy();
+
+  if(iRet == alarmOn)
+  {
+    //TODO: notify smoke alarm start and push rtsp
+  }
+
+  if(iRet == alarmStop)
+  {
+    //TODO: notify smoke alarm stop
+  }
+  return 0;
+}
+
 
 int CAlarmThread::alarm_run(Mat &frame ,uint8 iType)
 {

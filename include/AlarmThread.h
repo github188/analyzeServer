@@ -6,10 +6,13 @@
 #include "region.h"
 #include "VideoHandler.h"
 #include "fire.h"
+#include "smoke.h"
+#include "human.h"
 
 #define START_FRAME_INDEX     8
 #define INTERVAL_FRAME_INDEX  100
 #define STOP_FRAME_INDEX      40
+
 enum warnevent{
     alarmOn   = 0x01;
     alarmStop = 0x02;
@@ -42,11 +45,15 @@ public:
   CRegion* region;
   VideoHandler* videoHandler ;
   CFire*   fire;
+  CSmoke*  smoke;
+  CHuman*  human;
 
   int alarmStrategy();
 
+  int human_detect(Mat &frame);
   int region_detect(Mat &frame);
   int fire_detect(Mat &frame);
+  int smoke_detect(Mat &frame);
 
   int alarm_run(Mat &frame ,uint8 iType);
   void resource_release();
