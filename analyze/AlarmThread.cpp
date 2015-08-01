@@ -221,6 +221,8 @@ void CAlarmThread::run()
          usleep(40*1000);;
       }
   }
+  dbgprint("%s(%d),%d CAlarmThread exit!\n",DEBUGARGS,m_index);
+	pthread_exit(NULL);
 }
 
 int CAlarmThread::CreateAlarmThread()
