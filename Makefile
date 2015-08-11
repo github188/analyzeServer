@@ -17,7 +17,7 @@ export STRIP OBJCOPY OBJDUMP
 
 
 CXXFLAGS := -Wall  -O2 -g
-CXXFLAGS += -I $(shell pwd)/include
+CXXFLAGS += -I $(shell pwd)/include -I $(shell pwd)/include/onvif
 CXXFLAGS += $(shell pkg-config --cflags OpenCVPC) -lavformat -lavcodec -lavfilter -lavutil -lswresample -lswscale -lz -D__STDC_CONSTANT_MACROS
 
 LDLIBS   := $(shell pkg-config --libs  OpenCVPC)  -lpthread -lm -levent -ltinyxml  -lZThread

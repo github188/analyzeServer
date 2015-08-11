@@ -52,7 +52,6 @@ extern "C"
 #include <libavformat/avformat.h>
 }
 
-using namespace ZThread;
 using namespace std;
 using namespace cv;
 
